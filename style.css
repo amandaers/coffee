@@ -12,69 +12,98 @@ header {
   box-shadow: 0px 2px 2px #24242426;
   height: 18vh;
 }
-header img {
-  width: 3vw;
+header div{
+    display: flex;
 }
-h3 {
-  font-size: 24px;
+
+header ul{
+    display: flex;
+    list-style: none;
+    width: 32vw;
+    justify-content: space-evenly;
+    font-size: 20px;
 }
-h3:hover {
-  color: #9b5021;
-  transition: all 1s ease;
+
+header h2{
+    margin-left: 10px;
 }
-.logo {
-  display: flex;
-  justify-content: space-around;
-  width: 13vw;
-  margin-left: 8rem;
-  align-items: center;
+
+main{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    justify-content: space-around;
 }
-ul {
-  display: flex;
-  justify-content: space-around;
-  width: 25vw;
-  margin-right: 80px;
+
+main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50vw;
+    height: 45vh;
 }
-li {
-  list-style: none;
+
+main div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 19vh;
 }
-a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  font-size: 18px;
+
+
+
+button{
+    background-color: #FCA60F;
+    width: 19vw;
+    height: 8vh;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
 }
-a:hover {
-  color: chocolate;
-  transition: all 1s ease;
+
+main nav{
+    display: flex;
+   justify-content: space-around;
+   width: 10vw;
 }
-main {
-  display: flex;
-  justify-content: space-around;
-}
-p {
-  font-size: 34px;
-  font-weight: 700;
-}
-.conteudo {
-  margin-top: 10rem;
-  padding: 30px;
-}
-.botao button {
-  margin-top: 3rem;
-  background-color: #fca60f;
-  width: 20vw;
-  height: 9vh;
-  border-radius: 5px;
-  border: #fca60f;
-  font-size: 24px;
-  color: #ffff;
-  font-weight: 600;
-}
-.redes img {
-  margin-top: 2rem;
-}
-.copo img{
-  position: relative;
-  top: 30%;
+
+@media (max-width:500px) {
+    header{
+        flex-direction: column;
+        height: 18vh;
+    }
+
+    header ul{
+        width: 80vw;
+    }
+
+    main section{
+        width: 100vw;
+        align-items: center;
+        height: 58vh;
+    }
+
+    main figure{
+        display: none;
+    }
+
+    h1{
+        width: 85vw;
+        text-align: center;
+    }
+
+    main div {
+        align-items: center;
+        height: 35vh;
+    }
+
+    button{
+        width: 72vw;
+        font-size: 22px;
+    }
+     main nav{
+        width: 50vw;
+     }
 }
