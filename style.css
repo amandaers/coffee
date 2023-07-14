@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Nunito:wght@200;300;400;500;600;700&display=swap');
 * {
   margin: 0;
-  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  font-family: "nunito"sans-serif;
 }
 header {
   display: flex;
@@ -12,98 +12,135 @@ header {
   box-shadow: 0px 2px 2px #24242426;
   height: 18vh;
 }
-header div{
-    display: flex;
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 12vw;
+  margin-left: 5rem;
 }
-
-header ul{
-    display: flex;
-    list-style: none;
-    width: 32vw;
-    justify-content: space-evenly;
-    font-size: 20px;
+.logo img {
+  width: 40px;
 }
-
-header h2{
-    margin-left: 10px;
+h3 {
+  font-size: 25px;
 }
-
+h3:hover{
+color: rgb(155, 87, 10);
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30vw;
+  margin-right: 2rem;
+ 
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+a:hover{
+  color: rgb(155, 87, 10);
+}
 main{
-    display: flex;
-    align-items: center;
-    height: 80vh;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  justify-content:space-between;
+  margin-left:10rem;
 }
 
 main section{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50vw;
-    height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50vw;
+  height: 45vh;
 }
 
 main div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 19vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 19vh;
+
 }
 
-
+h1{
+  width: 27vw;
+  font-size: 26px;
+  font-weight: 700;
+}
 
 button{
-    background-color: #FCA60F;
-    width: 19vw;
-    height: 8vh;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: #FCA60F;
+  width: 19vw;
+  height: 8vh;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
 }
+button:hover{
+  background: rgb(131, 77, 15);
+  color:rgb(160, 152, 143);
 
+}
 main nav{
-    display: flex;
-   justify-content: space-around;
-   width: 10vw;
+  display: flex;
+ justify-content: space-around;
+ width: 10vw;
 }
-
+figure{
+  margin-right: 10rem;
+}
 @media (max-width:500px) {
-    header{
-        flex-direction: column;
-        height: 18vh;
-    }
+  header{
+      flex-direction: column;
+      height: 10vh;
+  }
+  .logo{
+    margin-left: 2px;
+  }
+  ul{
+      width: 80vw;
+      margin-right:1px;
+  }
 
-    header ul{
-        width: 80vw;
-    }
+  main section{
+      width: 10vw;
+      align-items: center;
+      height: 58vh;
+  }
 
-    main section{
-        width: 100vw;
-        align-items: center;
-        height: 58vh;
-    }
+  main figure{
+      display: none;
+  }
 
-    main figure{
-        display: none;
-    }
+  h1{
+      width: 85vw;
+      text-align: center;
+  }
 
-    h1{
-        width: 85vw;
-        text-align: center;
-    }
+  main div {
+      align-items: center;
+      height: 35vh;
+  }
 
-    main div {
-        align-items: center;
-        height: 35vh;
-    }
-
-    button{
-        width: 72vw;
-        font-size: 22px;
-    }
-     main nav{
-        width: 50vw;
-     }
+  button{
+      width: 65vw;
+      font-size: 25px;
+      font-family: "Agdasima",sans-serif;
+  }
+   main nav{
+      width: 50vw;
+      margin-bottom:2px;
+      margin-top: 18rem;
+   }
 }
+
+
